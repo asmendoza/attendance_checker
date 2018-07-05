@@ -4,7 +4,7 @@ apply plugin: 'realm-android'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "edu.admu.cs298s28.attendancechecker"
+        applicationId "edu.admu.cs295s28.attendancechecker"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
