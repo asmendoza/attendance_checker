@@ -12,11 +12,11 @@ import org.androidannotations.annotations.ViewById;
 
 @EActivity(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
-    @ViewById(R.id.btnMaps)
-    Button btnMaps;
+    /*@ViewById(R.id.btnMaps)
+    Button btnMaps;*/
 
-    @Click(R.id.btnMaps)
+   /* @Click(R.id.btnMaps)
     public void OpenMap(){
         MapsActivity_.intent(this).start();
-    }
+    }*/
 }
