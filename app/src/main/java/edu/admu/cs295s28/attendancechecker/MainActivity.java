@@ -12,6 +12,14 @@ import org.androidannotations.annotations.ViewById;
 
 @EActivity(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
+    @ViewById(R.id.button)
+    Button login;
+
+    @Click(R.id.button)
+    public void login(){
+        UserAccount_.intent(this).start();
+    }
+
     /*@ViewById(R.id.btnMaps)
     Button btnMaps;*/
 
