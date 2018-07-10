@@ -14,17 +14,36 @@ import org.androidannotations.annotations.ViewById;
 public class UserAccount extends AppCompatActivity {
 
     @ViewById(R.id.button)
-    Button login;
+    Button generate;
+
+    @ViewById(R.id.button2)
+    Button scan;
+
+    @ViewById(R.id.button3)
+    Button update;
+
+    @ViewById(R.id.button4)
+    Button summary;
 
     @Click(R.id.button)
     public void generateQR(){
         GenerateQR_.intent(this).start();
     }
-    @Click(R.id.button2)
-    public void summary(){
-        AttendanceSummary_.intent(this).start();
+
+    public void readQr(View view){
+        Intent intent=new Intent(this,QRScan.class);
+        startActivity(intent);
     }
 
+    @Click(R.id.button3)
+    public void updateAccount(){
+
+    }
+
+    @Click(R.id.button4)
+    public void summary (){
+        AttendanceSummary_.intent(this).start();
+    }
 
    /* public void readQr(View view){
         Intent intent=new Intent(MainActivity.this,QrRead.class);
