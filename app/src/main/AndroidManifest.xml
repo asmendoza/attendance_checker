@@ -27,9 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".UserAccount_" />
-        <activity android:name=".AttendanceSummary_"></activity>
+        <activity android:name=".AttendanceSummary_" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -44,7 +43,9 @@
 
         <activity
             android:name=".MapsActivity_"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ScanQR" />
+        <activity android:name=".GenerateQR_"></activity>
     </application>
 
 </manifest>
