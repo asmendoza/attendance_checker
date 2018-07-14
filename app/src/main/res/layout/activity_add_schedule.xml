@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".AddSchedule">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:text="ADD SCHEDULE"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/editText_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="Subject" />
+
+        <EditText
+            android:id="@+id/editText2"
+            style="@style/editText_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="Description" />
+
+        <EditText
+            android:id="@+id/editText3"
+            style="@style/editText_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="Time" />
+        <EditText
+            android:id="@+id/editText4"
+            style="@style/editText_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="Day" />
+        <EditText
+            android:id="@+id/editText6"
+            style="@style/editText_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="S.Y." />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:id="@+id/button"
+                style="@style/button1_style"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/button2_style"
+                android:clickable="true"
+                android:text="Cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -44,8 +44,9 @@
         <activity
             android:name=".MapsActivity_"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".QRScan"></activity>
-        <activity android:name=".GenerateQR_"></activity>
+        <activity android:name=".QRScan" />
+        <activity android:name=".GenerateQR_" />
+        <activity android:name=".AddSchedule_"></activity>
     </application>
 
 </manifest>
