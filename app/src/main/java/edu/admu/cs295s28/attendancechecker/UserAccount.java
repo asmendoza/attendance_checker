@@ -44,18 +44,4 @@ public class UserAccount extends AppCompatActivity {
     public void summary (){
         AttendanceSummary_.intent(this).start();
     }
-
-   /* public void readQr(View view){
-        Intent intent=new Intent(MainActivity.this,QrRead.class);
-        startActivity(intent);
-    }
-    public void generateQr(View view){
-        Intent intent=new Intent(this,GenerateQR.class);
-        startActivity(intent);
-    }*/
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_account);
-    }*/
 }
