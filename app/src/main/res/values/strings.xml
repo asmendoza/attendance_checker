@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Present!</string>
     <string name="title_activity_maps">Map</string>
+
+
+    <string-array name="role">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+
+
+    <string name="register">
+        <a>Register</a>
+    </string>
 </resources>
