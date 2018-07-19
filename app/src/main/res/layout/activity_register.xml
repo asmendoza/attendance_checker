@@ -48,7 +48,7 @@
                 style="@style/editText_style"
                 android:fontFamily="@font/montserrat"
                 android:hint="ID"
-                android:inputType="textPersonName" />
+                android:inputType="text" />
             <EditText
                 android:id="@+id/txtname"
                 style="@style/editText_style"
@@ -61,7 +61,7 @@
                 style="@style/editText_style"
                 android:fontFamily="@font/montserrat"
                 android:hint="E-mail"
-                android:inputType="textPersonName" />
+                android:inputType="textEmailAddress" />
 
             <EditText
                 android:id="@+id/txtpassword"
@@ -70,6 +70,13 @@
                 android:hint="Password"
                 android:inputType="textPersonName|textPassword" />
             <EditText
+                android:id="@+id/txtrepassword"
+                style="@style/editText_style"
+                android:fontFamily="@font/montserrat"
+                android:hint="Password"
+                android:inputType="textPersonName|textPassword" />
+
+            <EditText
                 android:id="@+id/txtcontact"
                 style="@style/editText_style"
                 android:fontFamily="@font/montserrat"
@@ -77,8 +84,9 @@
                 android:inputType="textPersonName" />
 
             <Spinner
-                android:id="@+id/role"
+                android:id="@+id/sprrole"
                 style="@style/editText_style"
+                android:entries="@array/role"
                 android:fontFamily="@font/montserrat"
                 android:hint="Role" />
 

@@ -2,7 +2,7 @@ package edu.admu.cs295s28.attendancechecker;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
-public class RealmData extends RealmObject {
+public class UserData extends RealmObject {
     //User Object
 
     @PrimaryKey
@@ -13,6 +13,7 @@ public class RealmData extends RealmObject {
     private String email;
     private String password;
     private String user_type;
+    private String avatarpath;
 
 
     public String getUser_id() {
@@ -63,15 +64,24 @@ public class RealmData extends RealmObject {
         this.user_type = user_type;
     }
 
+    public String getAvatarpath() {
+        return avatarpath;
+    }
+
+    public void setAvatarpath(String avatarpath) {
+        this.avatarpath = avatarpath;
+    }
+
     @Override
     public String toString() {
-        return "RealmData{" +
+        return "UserData{" +
                 "user_id='" + user_id + '\'' +
                 ", name='" + name + '\'' +
                 ", contact_num='" + contact_num + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", user_type='" + user_type + '\'' +
+                ", avatarpath='" + avatarpath + '\'' +
                 '}';
     }
 }

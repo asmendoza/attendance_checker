@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.Extra;
 import org.androidannotations.annotations.ViewById;
 
 @EActivity(R.layout.activity_user_account)
@@ -15,15 +16,15 @@ public class UserAccount extends AppCompatActivity {
 
     @ViewById(R.id.button)
     Button generate;
-
     @ViewById(R.id.button2)
     Button scan;
-
     @ViewById(R.id.button3)
     Button update;
-
     @ViewById(R.id.button4)
     Button summary;
+
+    @Extra
+    String uid;
 
     @Click(R.id.button)
     public void generateQR(){
