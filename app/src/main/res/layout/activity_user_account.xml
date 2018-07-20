@@ -16,65 +16,65 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView"
             android:layout_width="178dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             app:srcCompat="@android:drawable/sym_def_app_icon" />
         <TextView
-            android:id="@+id/editText"
+            android:id="@+id/txtuID"
             style="@style/editText_style"
             android:fontFamily="@font/montserrat"
-            android:hint="Username" />
+            android:hint="ID" />
 
         <TextView
-            android:id="@+id/editText2"
+            android:id="@+id/txtname"
             style="@style/editText_style"
             android:fontFamily="@font/montserrat"
             android:hint="Name" />
 
         <TextView
-            android:id="@+id/editText3"
+            android:id="@+id/txtemail"
             style="@style/editText_style"
             android:fontFamily="@font/montserrat"
-            android:hint="Student Number" />
+            android:hint="Email" />
         <TextView
-            android:id="@+id/editText4"
+            android:id="@+id/txtcontact"
             style="@style/editText_style"
             android:fontFamily="@font/montserrat"
-            android:hint="Course" />
+            android:hint="Contact Number" />
 
-        <LinearLayout
+       <!-- <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             >
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnGenerate"
                 style="@style/button1_style"
                 android:text="Generate QR" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnScan"
                 style="@style/button2_style"
                 android:clickable="true"
                 android:onClick="readQr"
                 android:text="Scan QR" />
-        </LinearLayout>
+        </LinearLayout>-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnUpdate"
             style="@style/button2_style"
             android:text="UPDATE ACCOUNT" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnList"
             style="@style/button1_style"
-            android:text="SUMMARY" />
+            android:text="SUBJECT LIST" />
     </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

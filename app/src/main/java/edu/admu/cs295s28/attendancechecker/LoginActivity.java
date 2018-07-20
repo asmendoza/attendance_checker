@@ -25,6 +25,8 @@ import io.realm.RealmResults;
 import io.realm.SyncCredentials;
 import io.realm.SyncUser;
 
+import static android.content.Context.MODE_PRIVATE;
+
 
 @EActivity(R.layout.activity_main)
 public class LoginActivity extends AppCompatActivity {
@@ -48,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
     Button login;
     @ViewById(R.id.button2)
     Button register;
+
 
     @AfterViews
     public void init() {

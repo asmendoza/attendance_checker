@@ -52,7 +52,8 @@
         <activity android:name=".GenerateQR_" />
         <activity android:name=".AddSchedule_" />
         <activity android:name=".RegisterActivity_" />
-        <activity android:name=".ImageActivity_"></activity>
+        <activity android:name=".ImageActivity_" />
+        <activity android:name=".ScheduleListActivity_"></activity>
     </application>
 
 </manifest>

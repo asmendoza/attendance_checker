@@ -8,6 +8,14 @@
         <item>Teacher</item>
     </string-array>
 
+    <string-array name="day">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
 
     <string name="register">
         <a>Register</a>

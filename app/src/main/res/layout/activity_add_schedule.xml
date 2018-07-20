@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
         <TextView
             android:id="@+id/editText5"
             android:layout_width="wrap_content"
@@ -22,29 +23,35 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/txtSubject"
             style="@style/editText_style"
             android:fontFamily="@font/montserrat"
             android:hint="Subject" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/txtDesc"
             style="@style/editText_style"
             android:fontFamily="@font/montserrat"
             android:hint="Description" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/txtTime"
             style="@style/editText_style"
             android:fontFamily="@font/montserrat"
             android:hint="Time" />
-        <EditText
-            android:id="@+id/editText4"
+       <!-- <EditText
+            android:id="@+id/txtDay"
             style="@style/editText_style"
+            android:fontFamily="@font/montserrat"
+            android:hint="Day" />-->
+        <Spinner
+            android:id="@+id/sprday"
+            style="@style/editText_style"
+            android:entries="@array/day"
             android:fontFamily="@font/montserrat"
             android:hint="Day" />
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/txtSY"
             style="@style/editText_style"
             android:fontFamily="@font/montserrat"
             android:hint="S.Y." />
@@ -52,14 +59,57 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLat"
+                    style="@style/editText_style"
+                    android:layout_width="136dp"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Latitude" />
+
+                <TextView
+                    android:id="@+id/txtLong"
+                    style="@style/editText_style"
+                    android:layout_width="136dp"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Longitude" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnMaps"
+                    style="@style/button2_style"
+                    android:layout_width="106dp"
+                    android:gravity="center"
+                    android:text="Open Maps" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center">
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnAdd"
                 style="@style/button1_style"
                 android:text="Add" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnCancel"
                 style="@style/button2_style"
                 android:clickable="true"
                 android:text="Cancel" />

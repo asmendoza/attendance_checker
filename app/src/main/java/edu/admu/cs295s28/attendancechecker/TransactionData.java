@@ -1,12 +1,14 @@
 package edu.admu.cs295s28.attendancechecker;
 
+import java.util.UUID;
+
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
 public class TransactionData extends RealmObject {
 
     @PrimaryKey
-    private String trans_id;
+    private String trans_id = UUID.randomUUID().toString();
 
     private String trans_userid;
     private String trans_schedid;

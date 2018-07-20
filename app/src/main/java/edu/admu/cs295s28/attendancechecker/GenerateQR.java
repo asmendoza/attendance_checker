@@ -22,6 +22,8 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,8 +41,21 @@ public class GenerateQR extends AppCompatActivity {
     @AfterViews
     public void init(){
 
-        //studentnumber
-       qrInput.setText("2018201010"+ System.currentTimeMillis());
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy/MM/dd");
+        String strTime = timeformat.format(calendar.getTime());
+        String strDate = dateformat.format(calendar.getTime());
+
+        //Scan by Teacher
+        //directly save to DB
+        //studentnumber+time+date+schedID
+        qrInput.setText("201820101"+ strTime + strDate + "");
+
+        //Scan by Student
+        //studentnumber+time+date+schedID
+        //will get the student number (query) and save to the DB
+        //qrInput.setText("201820101"+ strTime + strDate + "");
 
         try {
             //setting size of qr code

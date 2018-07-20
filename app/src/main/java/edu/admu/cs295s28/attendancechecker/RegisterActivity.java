@@ -77,12 +77,6 @@ public class RegisterActivity extends AppCompatActivity {
     String userID;
     UserData usr;
 
-   /* @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
-
-    }*/
 
     @AfterViews
     public void init() {
@@ -331,7 +325,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        realm.close();
+        /*realm.close();*/
     }
 
     @Override

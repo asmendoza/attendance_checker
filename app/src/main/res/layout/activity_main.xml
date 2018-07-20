@@ -57,6 +57,7 @@
                 android:id="@+id/button2"
                 style="@style/button2_style"
                 android:text="Register" />
+
         </LinearLayout>
         <!--<TextView
             android:id="@+id/textRegister"

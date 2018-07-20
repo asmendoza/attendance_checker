@@ -18,12 +18,7 @@
 
             <requestFocus />
         </TextView>
-       <!-- <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Generate QR Code"
-            android:onClick="qrGenerator"/>-->
+
         <ImageView
             android:layout_gravity="center_horizontal"
             android:id="@+id/imageView1"

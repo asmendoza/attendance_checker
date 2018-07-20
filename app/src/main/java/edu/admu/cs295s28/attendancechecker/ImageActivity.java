@@ -29,7 +29,6 @@ public class ImageActivity extends AppCompatActivity {
     @ViewById
     CropImageView cropImageView;
 
-
     @Click(R.id.loadImage)
     public void loadImage()
     {
