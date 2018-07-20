@@ -2,25 +2,33 @@ package edu.admu.cs295s28.attendancechecker;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Click;
-import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.ViewById;
-
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
+
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.Extra;
+import org.androidannotations.annotations.ViewById;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 import io.realm.ObjectServerError;
 import io.realm.Realm;
@@ -28,7 +36,7 @@ import io.realm.RealmResults;
 import io.realm.SyncCredentials;
 import io.realm.SyncUser;
 
-import java.io.File;
+import static android.app.Activity.RESULT_CANCELED;
 
 @EActivity(R.layout.activity_add_schedule)
 public class AddSchedule extends AppCompatActivity {
@@ -72,7 +80,7 @@ public class AddSchedule extends AppCompatActivity {
 
     @AfterViews
     public void init(){
-
+        c = this;
     }
 
     @Click(R.id.btnMaps)
@@ -88,7 +96,6 @@ public class AddSchedule extends AppCompatActivity {
             toast = Toast.makeText(c, "Subject is required!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
-
             return;
         }
 
@@ -96,7 +103,6 @@ public class AddSchedule extends AppCompatActivity {
             toast = Toast.makeText(c, "Subject Description is required!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
-
             return;
         }
 
@@ -104,7 +110,6 @@ public class AddSchedule extends AppCompatActivity {
             toast = Toast.makeText(c, "Time is required!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
-
             return;
         }
 
@@ -113,12 +118,11 @@ public class AddSchedule extends AppCompatActivity {
             toast = Toast.makeText(c, "S.Y. is required!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
-
             return;
         }
 
 
-        if (!MyRealm.isNetworkAvailable(this)) {
+        if (!MyRealm.isNetworkAvailable(c)) {
             Snackbar.make(btnAdd, "No internet connection detected. Try again later."
                     , Snackbar.LENGTH_SHORT)
                     .show();
@@ -146,7 +150,7 @@ public class AddSchedule extends AppCompatActivity {
             schedule.setSubject_long(lon);
             realm.commitTransaction();
 
-            toast = Toast.makeText(this, "Schedule info updated!", Toast.LENGTH_SHORT);
+            toast = Toast.makeText(c, "Schedule info updated!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
             onBackPressed();
@@ -190,8 +194,8 @@ public class AddSchedule extends AppCompatActivity {
                             toast.show();
 
                             onBackPressed();
-                        /*}*/
-                    }
+                        }
+                   /*}*/
 
                     @Override
                     public void onError(ObjectServerError error) {
@@ -207,10 +211,8 @@ public class AddSchedule extends AppCompatActivity {
                 MyRealm.logoutUser();
             }
         }
+}
 
-
-
-    }
     @Override
     public void onBackPressed(){
         super.onBackPressed();

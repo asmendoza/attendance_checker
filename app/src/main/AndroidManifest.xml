@@ -53,7 +53,9 @@
         <activity android:name=".AddSchedule_" />
         <activity android:name=".RegisterActivity_" />
         <activity android:name=".ImageActivity_" />
-        <activity android:name=".ScheduleListActivity_"></activity>
+        <activity android:name=".ScheduleListActivity_" />
+        <activity android:name=".AddStudentSched_" />
+        <activity android:name=".SubjectList_"></activity>
     </application>
 
 </manifest>

@@ -64,6 +64,9 @@ public class UserAccount extends AppCompatActivity {
     @ViewById(R.id.btnSchedule)
     Button btnSchedule;
 
+    @ViewById(R.id.btnScheduleList)
+    Button btnScheduleList;
+
     Realm realm;
     Picasso picasso;
     File savedImage;
@@ -126,7 +129,10 @@ public class UserAccount extends AppCompatActivity {
     public void subjectList(){
         ScheduleListActivity_.intent(this).start();
     }
-
+    @Click(R.id.btnScheduleList)
+    public void studentsubjectList(){
+        ScheduleListActivity_.intent(this).start();
+    }
 
     private void refreshImageView(File savedImage) {
 

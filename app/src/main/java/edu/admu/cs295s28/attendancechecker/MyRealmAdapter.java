@@ -1,5 +1,6 @@
 package edu.admu.cs295s28.attendancechecker;
 
+import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -14,31 +15,40 @@ import io.realm.Realm;
 import io.realm.RealmBaseAdapter;
 import io.realm.RealmResults;
 
-public class MyRealmAdapter extends RealmBaseAdapter<UserScheduleData>  implements ListAdapter {
-private ScheduleListActivity activity;
+public class MyRealmAdapter extends RealmBaseAdapter<ScheduleData>  implements ListAdapter {
+
+    OrderedRealmCollection<ScheduleData> realmResults;
+    Activity activity;
+
+   /* private ScheduleListActivity activity;
 Realm realm;
-UserScheduleData d;
+ScheduleData d;*/
 
 
-    public MyRealmAdapter(ScheduleListActivity activity, OrderedRealmCollection<UserScheduleData> data) {
-        super(data);
+    public MyRealmAdapter(Activity activity, OrderedRealmCollection<ScheduleData> realmResults) {
+        super(realmResults);
         this.activity = activity;
+        this.realmResults = realmResults;
     }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
-        //if (convertView == null) {
-        View view = activity.getLayoutInflater().inflate(R.layout.row_usersched,null);
-        //viewHolder = new ViewHolder();
+        View view = null;
+        if (convertView==null) {
+            view = activity.getLayoutInflater().inflate(R.layout.row_usersched, null    );
+        }
+        else {
+            view = convertView;
+        }
 
         final TextView titleField = view.findViewById(R.id.txtSubject);
         final TextView descField = view.findViewById(R.id.txtDesc);
 
-        d = adapterData.get(position);
+       ScheduleData sd = realmResults.get(position);
 
         Button btnGenerate = view.findViewById(R.id.btnGenerate);
-        btnGenerate.setTag(d);
+        btnGenerate.setTag(sd);
         //btnEdit.setId(d.getId());
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +59,7 @@ UserScheduleData d;
 
         Button btnScan = view.findViewById(R.id.btnScan);
         //position of the data
-        btnScan.setTag(d);
+        btnScan.setTag(sd);
         btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,8 +67,8 @@ UserScheduleData d;
             }
         });
 
-       /* titleField.setText(d.gets());
-        descField.setText(d.getPassword());*/
+        titleField.setText(sd.getSubject_title());
+        descField.setText(sd.getSubject_desc());
 
         return view;
     }

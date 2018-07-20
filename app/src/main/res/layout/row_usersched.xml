@@ -87,6 +87,14 @@
                     style="@style/button2_style"
                     android:layout_weight="1"
                     android:text="Summary" />
+                <Button
+                    android:id="@+id/btnEnroll"
+                    android:layout_width="78dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    style="@style/button1_style"
+                    android:layout_weight="1"
+                    android:text="Enroll" />
 
 
             </LinearLayout>
