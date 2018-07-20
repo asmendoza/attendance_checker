@@ -82,7 +82,7 @@ public class AddSchedule extends AppCompatActivity {
 
     @Click(R.id.btnAdd)
     public void add() {
-        if (txtSubject.getText().toString().trim().length() <= 0) {
+       /* if (txtSubject.getText().toString().trim().length() <= 0) {
             toast = Toast.makeText(c, "Subject is required!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
@@ -121,7 +121,7 @@ public class AddSchedule extends AppCompatActivity {
                     , Snackbar.LENGTH_SHORT)
                     .show();
             return;
-        }
+        }*/
 
         //not sure how it works
        /* final String subj = txtSubject.getText().toString();
