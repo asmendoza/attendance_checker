@@ -37,6 +37,8 @@ public class AddSchedule extends AppCompatActivity {
     Realm realm;
     Toast toast;
     Context c;
+    boolean editMode;
+    ScheduleData sched;
 
     @ViewById(R.id.txtSubject)
     EditText txtSubject;
@@ -82,7 +84,7 @@ public class AddSchedule extends AppCompatActivity {
 
     @Click(R.id.btnAdd)
     public void add() {
-       /* if (txtSubject.getText().toString().trim().length() <= 0) {
+        if (txtSubject.getText().toString().trim().length() <= 0) {
             toast = Toast.makeText(c, "Subject is required!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
@@ -121,35 +123,98 @@ public class AddSchedule extends AppCompatActivity {
                     , Snackbar.LENGTH_SHORT)
                     .show();
             return;
-        }*/
+        }
 
         //not sure how it works
-       /* final String subj = txtSubject.getText().toString();
+        final String subj = txtSubject.getText().toString();
         final String desc = txtDesc.getText().toString();
         final String time = txtTime.getText().toString();
         final String day = sprday.getSelectedItem().toString();
         final String sy = txtSY.getText().toString();
-        final String lat = txtLat.getText.toString();
-        final String lon = txtLong.getText.toString();
+        final String lat = txtLat.getText().toString();
+        final String lon = txtLong.getText().toString();
 
-        realm = MyRealm.getRealm();
+        if(editMode){
+            realm.beginTransaction();
+            ScheduleData schedule = sched;
+            schedule.setSubject_title(subj);
+            schedule.setSubject_desc(desc);
+            schedule.setSubject_time(time);
+            schedule.setSubject_day(day);
+            schedule.setSubject_sy(sy);
+            schedule.setSubject_lat(lat);
+            schedule.setSubject_long(lon);
+            realm.commitTransaction();
 
-                    ScheduleData subject;
-                    subject = new ScheduleData();
-                    subject.setSubject_title(subj);
-                    subject.setSubject_desc(desc);
-                    subject.setSubject_time(time);
-                    subject.setSubject_day(day);
-                    subject.setSubject_sy(sy);
-                    realm.beginTransaction();
-                    realm.copyToRealm(subject);
-                    realm.commitTransaction();
+            toast = Toast.makeText(this, "Schedule info updated!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+            toast.show();
+            onBackPressed();
+        } else {
+            try{
+                if(SyncUser.current() != null) {
+                    MyRealm.logoutUser();
+                }
 
-                    toast = Toast.makeText(c, "New subject has been saved", Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
-                    toast.show();
-                    onBackPressed();
-*/
+                SyncCredentials credentials = SyncCredentials.usernamePassword(subj, desc, true);
+
+                SyncUser.logInAsync(credentials, Constants.AUTH_URL, new SyncUser.Callback<SyncUser>() {
+                    @Override
+                    public void onSuccess(SyncUser result) {
+                        Log.e("Login Success", result.getIdentity());
+                        realm = MyRealm.getRealm();
+
+                        ScheduleData sched;
+/*
+                        if(isInUserList(uID)){
+                            toast = Toast.makeText(c, "An account has been registered with this email!", Toast.LENGTH_SHORT);
+                            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+                            toast.show();
+                        } else {*/
+                            sched = new ScheduleData();
+                            sched.setSubject_id(sched.getSubject_id());
+                            sched.setSubject_title(subj);
+                            sched.setSubject_desc(desc);
+                            sched.setSubject_time(time);
+                            sched.setSubject_day(day);
+                            sched.setSubject_sy(sy);
+                            sched.setSubject_lat(lat);
+                            sched.setSubject_long(lon);
+
+                            realm.beginTransaction();
+                            realm.copyToRealm(sched);
+                            realm.commitTransaction();
+
+                            toast = Toast.makeText(c, "New schedule has been saved", Toast.LENGTH_SHORT);
+                            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+                            toast.show();
+
+                            onBackPressed();
+                        /*}*/
+                    }
+
+                    @Override
+                    public void onError(ObjectServerError error) {
+                        Log.e("Login Error", error.toString());
+                    }
+                });
+            } catch (Exception e) {
+                e.printStackTrace();
+                toast = Toast.makeText(this, "Cannot login to server!", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+                toast.show();
+            } finally {
+                MyRealm.logoutUser();
+            }
+        }
+
+
+
+    }
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        finish();
     }
 }
 

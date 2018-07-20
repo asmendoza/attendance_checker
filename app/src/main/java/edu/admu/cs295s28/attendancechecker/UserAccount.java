@@ -61,6 +61,9 @@ public class UserAccount extends AppCompatActivity {
     @ViewById(R.id.btnList)
     Button btnList;
 
+    @ViewById(R.id.btnSchedule)
+    Button btnSchedule;
+
     Realm realm;
     Picasso picasso;
     File savedImage;
@@ -90,6 +93,15 @@ public class UserAccount extends AppCompatActivity {
             refreshImageView(savedImage);
         }
 
+        switch (usr.getUser_type()) {
+            case "Student":
+                btnSchedule.setVisibility(View.GONE);
+                break;
+            case "Teacher":
+                btnSchedule.setVisibility(View.VISIBLE);
+                break;
+        }
+
     }
    /* @Click(R.id.btnGenerate)
     public void generateQR(){
@@ -106,6 +118,10 @@ public class UserAccount extends AppCompatActivity {
 
     }
 
+    @Click(R.id.btnSchedule)
+    public void addSched(){
+        AddSchedule_.intent(this).start();
+    }
     @Click(R.id.btnList)
     public void subjectList(){
         ScheduleListActivity_.intent(this).start();
