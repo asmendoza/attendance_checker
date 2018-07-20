@@ -1,6 +1,7 @@
 package edu.admu.cs295s28.attendancechecker;
 
 import java.util.UUID;
+import io.realm.RealmObject;
 
 import io.realm.annotations.PrimaryKey;
 

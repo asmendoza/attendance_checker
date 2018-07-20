@@ -10,43 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43237ac5-291a-4ab8-8860-3fa032d7b5d2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/ScheduleListActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserScheduleData.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_schedule_list.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_usersched.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/edu/admu/cs295s28/attendancechecker/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/edu/admu/cs295s28/attendancechecker/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/AddSchedule.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/AddSchedule.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/AttendanceSummary.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/AttendanceSummary.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/GenerateQR.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/GenerateQR.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/ImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/ImageActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/LoginActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/QRScan.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/QRScan.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/RegisterActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/ScheduleData.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/ScheduleData.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/TransactionData.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/TransactionData.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserAccount.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserAccount.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_schedule.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_schedule.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_attendance_summary.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_attendance_summary.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_generate_qr.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_generate_qr.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_account.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_account.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserScheduleData.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserScheduleData.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -113,45 +87,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_generate_qr.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_generate_qr.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_image.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_image.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="activity_register.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
           <provider editor-type-id="android-designer2">
@@ -198,7 +133,7 @@
           </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="19" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="24" selection-end-column="19" />
+              <caret line="24" column="19" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="24" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -217,15 +152,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="row_usersched.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="row_usersched.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_usersched.xml">
-          <provider selected="true" editor-type-id="android-designer2">
+          <provider editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="750">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
               <caret line="50" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyRealmAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserScheduleData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserScheduleData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2314,9 +2285,7 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_schedule_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/ScheduleListActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/TransactionData.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserScheduleData.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_attendance_summary.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/AttendanceSummary.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/ImageActivity.java" />
@@ -2325,12 +2294,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/AddSchedule.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/GenerateQR.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/QRScan.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/RealmObject.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserScheduleData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -2523,7 +2496,7 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="Pixel_2_XL_API_27" />
+    <property name="device.picker.selection" value="dda3b2a3" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="android.profiler.active" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/lvtamayo/AndroidStudioProjects/attendance_checker/app/src/main/res/layout/activity_user_account.xml" />
@@ -2831,7 +2804,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531885201668</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updated Layout and Activities.">
+      <created>1532052231525</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532052231525</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2845,7 +2825,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2863,7 +2842,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26895565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27932286" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27932286" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2891,25 +2870,26 @@
     <MESSAGE value="Add Schedule Layout done! :)" />
     <MESSAGE value="RealmData (user object), RealmApplication, ScheduleData, TransactionData---Realm Objects added." />
     <MESSAGE value="Register Activity added (Use of camera is integrated)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Register Activity added (Use of camera is integrated)." />
+    <MESSAGE value="Updated Layout and Activities." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Layout and Activities." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java</url>
+          <line>54</line>
+          <properties method="onClick">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/button1.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/AttendanceSummary.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/UserAccount.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/ScanQR.java" />
@@ -3092,14 +3072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/QRScan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -3136,36 +3108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="18" column="80" lean-forward="false" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserScheduleData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3272,7 +3214,7 @@
       </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="24" selection-end-column="19" />
+          <caret line="24" column="19" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="24" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -3288,14 +3230,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/RealmObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_usersched.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="750">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
           <caret line="50" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/UserScheduleData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/admu/cs295s28/attendancechecker/MyRealmAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
